@@ -252,7 +252,7 @@ nav {
 .video-secton {
     max-width: 1040px;
     margin: 0 auto;
-    border: 5px solid red;
+
 
 
 }
@@ -262,12 +262,10 @@ nav {
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    border: 2px solid rebeccapurple;
 }
 
 .funny-video-container {
     display: flex;
-    border: 2px solid red;
     justify-content: center;
     /* height: 500px; */
     gap: 10px;
@@ -302,7 +300,6 @@ nav {
 .funny-video {
     position: relative;
     width: max-content;
-    border: 2px solid red;
 }
 
 .funny-video img {
@@ -319,6 +316,60 @@ nav {
     bottom: 200px;
     right: 100px;
 }
+
+.video-p {
+    color: #534C64;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+/* ply section styles */
+.play-section {
+    display: flex;
+    max-width: 1040px;
+    margin: 50px auto;
+}
+
+.ply-discription {
+    max-width: 50%;
+    margin: 100px auto;
+    align-items: center;
+    text-align: center;
+}
+
+.ply-img-container {
+    max-width: 50%;
+    margin: 0 auto;
+
+}
+
+.play-section img {
+    object-fit: cover;
+    width: 100%;
+    position: relative;
+
+}
+
+.play-section .img-size-two {
+    object-fit: cover;
+    width: 50%;
+    margin-top: 0;
+    bottom: 150px;
+    right: 100px;
+
+}
+
+.ply-tilte {
+    color: #0B0223;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 60px;
+}
+
+
+
 
 /* quality section styles*/
 
@@ -548,53 +599,143 @@ footer {
         grid-template-columns: 2, 1fr;
     }
 
+    .funny-video-container {
+        display: grid;
+        grid-template-columns: repeat(1fr);
+        align-items: center;
+    }
+
+    .funny-video img {
+        margin: 0 auto;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .funny-video p {
+        font-size: 10px;
+    }
+
+    .funny-video-container img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .play-section {
+        flex-direction: column;
+        margin: 50px auto;
+    }
 
 
-
-
-
-    /* resporsive media query for medium devices */
-    @media screen and (min-width:576px) and (max-width:992px) {
-
-        .nav-container {
-            flex-direction: column;
-            align-items: center;
-            max-width: 0 auto;
-
-        }
-
-        .nav-left {
-            display: flex;
-            width: 100%;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-
-        .nav-right {
-            flex-direction: column;
-            width: 100%;
-            gap: 10px;
-            align-items: center;
-            justify-content: center;
-
-        }
-
-        .banner-container {
-            flex-direction: column;
-            margin: 50px auto;
-            background-size: 100% 60%;
-
-
-        }
-
-        .banner-icone {
-            margin: 0 auto;
-
-        }
-
-        .btn-one {
-            margin: 10px;
-        }
+    .play-section .img-size-two {
+        object-fit: cover;
+        width: 50%;
+        margin-top: 0;
+        bottom: 100px;
+        right: 50px;
 
     }
+
+    .ply-discription {
+        max-width: 100%;
+        margin: 50px auto;
+        align-items: center;
+        text-align: center;
+    }
+
+    .ply-img-container {
+        max-width: 80%;
+        margin: 0 auto;
+
+    }
+
+
+
+
+}
+
+
+
+/* resporsive media query for medium devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 0 auto;
+
+    }
+
+    .nav-left {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .nav-right {
+        flex-direction: column;
+        width: 100%;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .banner-container {
+        flex-direction: column;
+        margin: 50px auto;
+        background-size: 100% 60%;
+
+
+    }
+
+    .banner-icone {
+        margin: 0 auto;
+
+    }
+
+    .btn-one {
+        margin: 10px;
+    }
+
+
+    .gammer-container {
+        flex-direction: column;
+    }
+
+    .gammers-box {
+        max-width: 100%;
+    }
+
+    .gamers-disciption {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    .funny-video-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+    }
+
+    .funny-video img {
+        margin: 0 auto;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .funny-video p {
+        font-size: 12px;
+    }
+
+    .funny-video-container img {
+        object-fit: cover;
+        width: 50%;
+    }
+
+
+}
