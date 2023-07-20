@@ -315,6 +315,26 @@ nav {
     position: absolute;
     bottom: 200px;
     right: 100px;
+    display: none;
+}
+
+
+.funny-video:hover .fa-circle-play {
+    position: absolute;
+    bottom: 200px;
+    right: 100px;
+    display: block;
+
+}
+
+
+.video-difrent-img {
+    filter: blur(0);
+    transition: filter 0.3s ease;
+}
+
+.funny-video:hover .video-difrent-img {
+    filter: blur(2px);
 }
 
 .video-p {
@@ -620,6 +640,17 @@ footer {
         width: 100%;
     }
 
+    .funny-video:hover .fa-circle-play {
+        position: absolute;
+        bottom: 250px;
+        right: 150px;
+        display: block;
+
+    }
+
+
+
+
     .play-section {
         flex-direction: column;
         margin: 50px auto;
@@ -647,6 +678,8 @@ footer {
         margin: 0 auto;
 
     }
+
+
 
 
 
@@ -730,12 +763,29 @@ footer {
 
     .funny-video p {
         font-size: 12px;
+        text-align: center;
     }
 
     .funny-video-container img {
         object-fit: cover;
-        width: 50%;
+        width: 60%;
     }
+
+    .funny-video .fa-circle-play {
+        position: absolute;
+        bottom: 50px;
+        right: 100px;
+
+    }
+
+    .funny-video:hover .fa-circle-play {
+        position: absolute;
+        bottom: 140px;
+        right: 150px;
+        display: block;
+
+    }
+
 
 
 }
